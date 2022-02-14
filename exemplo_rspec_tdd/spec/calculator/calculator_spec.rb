@@ -27,5 +27,7 @@ describe Calculator do
       result = calc.sum(-5, 5)
       expect(result).to eq(0)
     end
+
+    xspecify 'with numbers'
   end
 end
