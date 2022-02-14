@@ -1,7 +1,7 @@
 require 'calculator'
 
-describe Calculator do
-  subject(:calc) { described_class.new }
+describe Calculator, "Testing Calculator's Methods" do
+  subject(:calc) { described_class.new } # subject explícito
 
   context '#sum' do
     it 'with positive number' do
