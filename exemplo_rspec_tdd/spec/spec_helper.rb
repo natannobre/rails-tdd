@@ -13,6 +13,9 @@
 # it.
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require_relative '../helpers/helper'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
@@ -20,6 +23,8 @@ RSpec.configure do |config|
 
   # Use the specified formatter
   # config.formatter = :documentation
+
+  config.include Helper # Helper method de módulo
 
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
