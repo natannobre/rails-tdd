@@ -1,1 +1,1 @@
-# rails-tdd
+# Ruby on Rails TDD using RSpec
