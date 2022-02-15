@@ -19,4 +19,18 @@ describe Calculator, "Testing Calculator's Methods" do
       expect(result).to eq(-2)
     end
   end
+
+  context '#div' do
+    # it 'divide by 0' do
+    #   expect { calc.div(3, 0) }.to raise_exception # Erro genérico
+    # end
+
+    it 'divide by 0' do
+      expect { calc.div(3, 0) }.to raise_error(ZeroDivisionError)
+      expect { calc.div(3, 0) }.to raise_error('divided by 0')
+      expect { calc.div(3, 0) }.to raise_error(ZeroDivisionError, 'divided by 0')
+      expect { calc.div(3, 0) }.to raise_error(/divided/)
+    end
+
+  end
 end
