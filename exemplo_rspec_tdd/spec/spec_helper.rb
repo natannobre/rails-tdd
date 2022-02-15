@@ -17,6 +17,31 @@
 require_relative '../helpers/helper'
 
 RSpec.configure do |config|
+
+  # config.before(:suite) do
+  #   puts ">>>>>>>>>>>>>>>>>>>>>> ANTES DE TODA A SUITE DE TESTES"
+  # end
+
+  # config.after(:suite) do
+  #   puts ">>>>>>>>>>>>>>>>>>>>>> DEPOIS DE TODA A SUITE DE TESTES"
+  # end
+
+  # config.before(:context) do # :all tem o mesmo efeito
+  #   puts ">>>>>>>>>>>>>>>>>>>>>> ANTES DE TODOS OS TESTES"
+  # end
+
+  # config.after(:context) do
+  #   puts ">>>>>>>>>>>>>>>>>>>>>> DEPOIS DE TODOS OS TESTES"
+  # end
+
+  # config.before(:each) do # :example tem o mesmo efeito
+  #   puts ">>>>>>>>>>>>>>>>>>>>>> ANTES DE CADA TESTE"
+  # end
+
+  # config.after(:each) do
+  #   puts ">>>>>>>>>>>>>>>>>>>>>> DEPOIS DE CADA TESTE"
+  # end
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
