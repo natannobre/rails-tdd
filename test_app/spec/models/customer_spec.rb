@@ -43,4 +43,10 @@ RSpec.describe Customer, type: :model do
 
     expect(customer.vip).to be false
   end
+
+  it 'Usando o attributes_for' do
+    attrs = attributes_for(:customer)
+    customer = Customer.create(attrs)
+    expect(customer.full_name).to start_with('Sr. ')
+  end
 end
