@@ -31,4 +31,16 @@ RSpec.describe Customer, type: :model do
 
     expect(customer.full_name).to start_with('Sr. ')
   end
+
+  it 'Herança #vip' do
+    customer = create(:customer_vip)
+
+    expect(customer.vip).to be true
+  end
+
+  it 'Herança #default' do
+    customer = create(:customer_default)
+
+    expect(customer.vip).to be false
+  end
 end
