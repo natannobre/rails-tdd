@@ -25,4 +25,10 @@ RSpec.describe Customer, type: :model do
   end
 
   it { expect { create(:customer) }.to change { Customer.all.size }.by(1) }
+
+  it '#full_name - specify attribute' do
+    customer = create(:user, name: 'Jackson Pires') # factory alias
+
+    expect(customer.full_name).to start_with('Sr. ')
+  end
 end
