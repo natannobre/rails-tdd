@@ -21,6 +21,10 @@ Bundler.require(*Rails.groups)
 
 module TestApp
   class Application < Rails::Application
+
+    # FactoryBot
+    config.factory_bot.definition_file_paths = ['spec/factories']
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
