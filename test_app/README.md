@@ -19,6 +19,7 @@ Things you may want to cover:
   bundle
   bundle exec spring binstub --all
   bin/rails g scaffold Customer name:string email:string
+  bin/rails g model Order description:string customer:references
   ```
 
 * Database creation
