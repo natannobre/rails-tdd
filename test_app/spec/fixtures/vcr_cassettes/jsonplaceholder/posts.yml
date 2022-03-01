@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://jsonplaceholder.typicode.com/posts/2
+    uri: API-URL/posts/2
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 01 Mar 2022 18:11:30 GMT
+      - Tue, 01 Mar 2022 18:26:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -53,17 +53,17 @@ http_interactions:
       Cf-Cache-Status:
       - HIT
       Age:
-      - '2449'
+      - '3329'
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Fx3oiQQB%2BcG8GHcVIUiN3%2FOUh2jwXtQAQhGqVurCv0s7dg3j9L%2Fscir93xzmV%2BXWRfHAdLkFYk0U3iZZFCAldFBX6U6FvNNjJwTIWItqmfhV%2BifSqshG2HbEPPUDeUpaHMBR4bT0uwZJiF004m%2BBl5q9l94lMWbHTP%2FV"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=wsrx2hXKRaiwB5S87%2FeyWN5PF4rpIhRMst1y4%2Fo7xVwESnGj9gWdllbqpaxE6VYYgON1YjbvZhvMo%2B21pSpWy8dKQa3qtphgea%2FMYvnIbsjYJiJsFzoTFaCCym7T%2FG9r7MsqYGE5nifx9X0q2fi5cemcAFt2MALrFgPJ"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 6e53db041fe26f86-JDO
+      - 6e53f081097a6f89-JDO
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -76,5 +76,5 @@ http_interactions:
           "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
         }
     http_version: 
-  recorded_at: Tue, 01 Mar 2022 18:11:30 GMT
+  recorded_at: Tue, 01 Mar 2022 18:26:10 GMT
 recorded_with: VCR 3.0.3
