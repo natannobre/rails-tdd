@@ -15,21 +15,21 @@ RSpec.describe CustomersController, type: :controller do
   end
 
   context 'as Logged Member' do
-    it '#show' do
-      member = create(:member)
-      create(:customer)
 
-      sign_in member
+    before do
+      @member = create(:member)
+      @customer = create(:customer)
+    end
+    
+    it '#show' do
+      sign_in @member
 
       get :show, params: { id: Customer.last.id }
       expect(response.status).to eq(200)
     end
 
     it 'render a :show template' do
-      member = create(:member)
-      create(:customer)
-
-      sign_in member
+      sign_in @member
 
       get :show, params: { id: Customer.last.id }
       expect(response).to render_template(:show)
@@ -37,7 +37,11 @@ RSpec.describe CustomersController, type: :controller do
 
     it 'with valid attributes' do
       customer_params = attributes_for(:customer)
-      p customer_params
+      sign_in @member
+
+      expect {
+        post :create, params: { customer: customer_params }
+      }.to change(Customer, :count).by(1)
     end
   end
 end
