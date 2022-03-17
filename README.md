@@ -12,3 +12,5 @@
 [Gem Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers)
 
 [Capybara](https://github.com/teamcapybara/capybara)
+
+[Capybara and Devise](https://github.com/plataformatec/devise/wiki/How-To:-Test-with-Capybara)
