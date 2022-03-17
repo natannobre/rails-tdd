@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Customers", type: :feature, js: true do
+RSpec.feature 'Customers', type: :feature, js: true do
   it 'Visit #index page' do
     visit(customers_path)
     page.save_screenshot('screenshot.png')
@@ -9,7 +9,7 @@ RSpec.feature "Customers", type: :feature, js: true do
 
   it 'Creates Customer' do
     member = create(:member)
-    login_as(member, :scope => :member)
+    login_as(member, scope: :member)
 
     visit(new_customer_path)
 
