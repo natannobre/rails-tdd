@@ -10,3 +10,5 @@
 [Gem Webmock](https://github.com/bblimke/webmock)
 
 [Gem Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers)
+
+[Capybara](https://github.com/teamcapybara/capybara)
