@@ -14,3 +14,7 @@
 [Capybara](https://github.com/teamcapybara/capybara)
 
 [Capybara and Devise](https://github.com/plataformatec/devise/wiki/How-To:-Test-with-Capybara)
+
+[Capybara RSpec Matchers](http://www.rubydoc.info/github/jnicklas/capybara/Capybara/RSpecMatchers)
+
+[Capybara Cheatsheet](https://gist.github.com/tomas-stefano/6652111)
