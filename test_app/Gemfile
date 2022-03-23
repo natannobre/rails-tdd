@@ -44,6 +44,7 @@ group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   # gem 'chromedriver-helper' # only headless - dentro de uma VM
+  gem 'rspec-json_expectations'
 end
 
 group :development do
