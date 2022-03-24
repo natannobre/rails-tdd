@@ -35,8 +35,8 @@ RSpec.describe 'Customers', type: :request do
       expect(response.body).to include_json(
         [
           id: 1,
-          name: 'Galina Homenick',
-          email: 'email1.email.com'
+          name: (be_kind_of String),
+          email: (be_kind_of String)
         ]
       )
     end
@@ -45,7 +45,7 @@ RSpec.describe 'Customers', type: :request do
       get '/customers/1.json'
       expect(response).to have_http_status(200)
       expect(response.body).to include_json(
-        id: 1
+        id: /\d/
       )
     end
   end
