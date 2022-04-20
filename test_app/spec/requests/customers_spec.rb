@@ -24,6 +24,13 @@ RSpec.describe 'Customers', type: :request do
   # }
 
   describe 'GET /index' do
+    it 'JSON Schema' do
+      get '/customers/1.json'
+
+      expect(response.status).to eq 200
+      expect(response).to match_response_schema('customer')
+    end
+
     it 'renders a successful response' do
       get customers_path
       expect(response).to have_http_status(200)
